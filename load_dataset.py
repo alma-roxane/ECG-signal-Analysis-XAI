@@ -41,6 +41,7 @@ ecg_signal = record.p_signal[:,0]
 r_peaks = annotation.sample
 labels = annotation.symbol
 fs = record.fs
+time = np.arange(len(ecg_signal)) / fs
 
 print("Sampling Frequency:", fs)
 print("Signal Length:", len(ecg_signal))
